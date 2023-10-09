@@ -6,6 +6,7 @@
     <title>Find Donor</title>
     <link rel="stylesheet" href="./nav-footer.css">
     <link rel="stylesheet" href="./findDonor.css">
+    <link rel="stylesheet" href="./signInUp.css">
 </head>
 <body>
     <nav>
@@ -22,6 +23,18 @@
         </div>
         <button class="signIn-btn" id="nav-p3">SignIn</button>
     </nav>
+    <!--SignIn Form-->
+    <section class="signIn_Form_section">
+        <div class="close-btn">&times;</div>
+        <h2>Sign In</h2>
+        <form method="post" action="javascript:void(0)" class="signIn_Form">
+            <!--value of action attribute is remaining-->
+            Email<input type="text" id="email" placeholder="e.g. ravikumar14@gmail.com"><br>
+            Password<input type="password" id="password" placeholder="e.g. raVi99"><br>
+            <button class="signIn-btn" id="signIn_Form_btn">Sign In</button><br>
+            <a href="#">Forgot password</a>
+        </form>
+    </section>
     <!--7 Sept-->
     <form method="post" id="findDonor">
         <section id="search">
@@ -56,5 +69,6 @@
     <footer>
         &copy; Copyright 2023 by BloodLink
     </footer>
+    <script src="./SignIn-Up_Form.js"></script>
 </body>
 </html>

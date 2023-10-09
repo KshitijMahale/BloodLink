@@ -45,12 +45,12 @@ nav a {
 #nav-p2 a {
     margin: 0 2rem;
     font-size: 1.5rem;
-    color: #B3003F;
+    color: #b30000;
     transition: 500ms;
     font-weight: 500;
 }
 #nav-p2 a:hover {
-    text-decoration: underline solid #B3003F 2px;
+    text-decoration: underline solid #b30000 2px;
 }
 .signIn-btn {
     border: none;
@@ -59,16 +59,16 @@ nav a {
     font-size: 1.2rem;
     font-weight: bold;
     color: #fff;
-    background-color: #B3003F;
+    background-color: #b30000;
     transition: 300ms;
     cursor: pointer;
-    border: 03px solid #B3003F;
+    border: 03px solid #b30000;
 }
 #nav-p3 {
     margin-right: 6rem;
 }
 .signIn-btn:hover {
-    color: #B3003F;
+    color: #b30000;
     background-color: #fff;
 }
 
