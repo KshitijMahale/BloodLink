@@ -1,34 +1,30 @@
 main {
-    margin: 10rem 15rem;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    margin: 7rem 15rem;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
 }
 
 h1 {
-    color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 1.5rem;
+    color: #b30000;
+    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 #scan-text {
-    margin-top: 2rem;
-    background-color: #b30000;
+    margin-top: 1rem;
+    background-color: #b3000067;
     border-radius: 0.5rem;
     text-align: center;
+    border-radius: 0.1rem 30rem;
 }
 
 main img {
     width: 20rem;
-    margin: 1.5rem 0 0 21rem;
+    margin: 1rem 0 0 21rem;
 }
 
-#greeting {
+/* #greeting {
     font-size: 2rem;
     text-decoration: underline wavy grey 2px;
     font-weight: 700;
-}
-
-/* footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0.1%;
 } */

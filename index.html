@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./index-style.css">
     <link rel="stylesheet" href="./nav-footer.css">
+    <link rel="stylesheet" href="./signInUp.css">
 </head>
 <body>
     <nav>
@@ -16,11 +17,11 @@
             <span class="logo">BloodLink</span>
         </a>
         <div id="nav-p2">
-            <a href="./index.html" id="home-page">Home</a>
-            <a href="./findDonor.html" id="findDonor-page">Find donor</a>
-            <!-- <a href="#">Contact us</a> -->
-            <a href="./funds.html" id="raiseFunds-page">Raise Funds</a>
-            <a href="#" id="aboutUs-page">About Us</a>
+            <a href="./index.html" class="nav-links" id="home-page">Home</a>
+            <a href="./findDonor.html" class="nav-links" id="findDonor-page">Find donor</a>
+            <!-- <a href="#" class="nav-links">Contact us</a> -->
+            <a href="./funds.html" class="nav-links" id="raiseFunds-page">Raise Funds</a>
+            <a href="./aboutUs.html" class="nav-links" id="aboutUs-page">About Us</a>
         </div>
         <button class="signIn-btn" id="nav-p3">Sign In</button>
     </nav>
@@ -78,7 +79,7 @@
                     <label class="align-inputBox">Email <input type="text" id="email" placeholder="e.g. ravikumar14@gmail.com" required><br></label>
                     <label class="align-inputBox">Password <input type="password" id="password" placeholder="e.g. raVi99" required><br></label>
                     <!-- <label class="align-inputBox">Optional Information <textarea name="medical-history" id="medical-history" cols="50" rows="5" placeholder="Give details of your allergies, medications, or chronic health conditions (If any)."></textarea><br></label> -->
-                    <input type="checkbox" name="privacyPolicy" value="1" class="privacyPolicy" checked  style="width: 3%;" required>I have read and understood the <a href="./privacyPolicy.html" id="privacyPolicy_link">privacy policy</a><br>
+                    <input type="checkbox" name="privacyPolicy" value="1" class="privacyPolicy" checked  style="width: 3%;" required><span>I have read and understood the <a href="./privacyPolicy.html" id="privacyPolicy_link">privacy policy</a></span><br>
                     <!--Create a page for Privacy policy-->
                     <button type="submit" class="signIn-btn" id="signUp_Form_btn">Sign Up</button>
                     <button type="reset" class="reset-btn">Reset</button>
@@ -167,5 +168,6 @@
         &copy; Copyright 2023 by BloodLink
     </footer>
     <script src="./SignIn-Up_Form.js"></script>
+    <script src="./nav-links.js"></script>
 </body>
 </html>

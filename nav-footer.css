@@ -67,6 +67,9 @@ nav a {
 #nav-p3 {
     margin-right: 6rem;
 }
+.nav-links.active-nav-links {
+    text-decoration: underline solid #000 2px;
+}
 .signIn-btn:hover {
     color: #b30000;
     background-color: #fff;
