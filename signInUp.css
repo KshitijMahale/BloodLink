@@ -55,6 +55,7 @@
     font-size: 1.1rem;
 }
 #signIn_Form_btn {
+    transition: transform 200ms ease-in-out 0ms;
     width: 99%;
     padding: 0.4rem 0;
     border-radius: 0.2rem;
