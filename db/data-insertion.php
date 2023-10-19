@@ -1,5 +1,5 @@
 <?php
-    include 'config.php';
+    include '../include/config.php';
     $name = $_POST['name'];
     $age = $_POST['age'];
     $gender = $_POST['gender'];
@@ -9,10 +9,10 @@
     $email = $_POST['email'];
     $password = $_POST['password'];
 
+    // authentication
     $check_query = "SELECT * FROM donor WHERE name='$name' OR email='$email' OR phoneNumber='$phoneNumber'";
     // $result = $conn->query($check_query);
     $result = mysqli_query($conn, $check_query);
-
 
     if (mysqli_num_rows($result) > 0) {
         echo "User with the same username, and/or email, and/or phone number already exists.";
@@ -28,29 +28,3 @@
             echo '<script>alert("Oops! Something went wrong. Please try again.")</script>';
         }
     }
-
-    // // mobile number check
-    // $_mobile = $_POST['mobileNo'];
-
-    // $sql = "SELECT phoneNumber FROM donor WHERE phoneNumber='$_mobile'";
-    // $result = mysqli_query($conn, $sql);
-    // if(mysqli_num_rows($result)>0){
-    //     echo '<script>alert("This number already exists.")</script>';
-    // }
-    // else {
-    //     $$phoneNumber = $_POST['mobileNo'];
-    // }
-
-    // email check
-    // $email_check = $_POST['email'];
-
-    // $sql = "SELECT email FROM donor WHERE email='$email_check'";
-    // $result = mysqli_query($conn, $sql);
-    // if(mysqli_num_rows($result)>0){
-    //     echo '<script>alert("This email already exists.")</script>';
-    // }
-    // else {
-    //     $email = $_POST['email'];
-    // }
-
-    // echo "Hello world!";

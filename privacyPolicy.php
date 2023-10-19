@@ -1,41 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BloodBank System</title>
-    <link rel="stylesheet" href="./nav-footer.css" />
-    <link rel="stylesheet" href="./privacyPolicy.css" />
-    <link rel="stylesheet" href="./signInUp.css">
-  </head>
-  <body>
-    <nav>
-      <a id="nav-p1" href="./index.html">
-        <img src="./imgs/logo-img.png" alt="logo" />
-        <span class="logo">BloodLink</span>
-      </a>
-      <div id="nav-p2">
-        <a href="./index.html" class="nav-links" id="home-page">Home</a>
-            <a href="./findDonor.html" class="nav-links" id="findDonor-page">Find donor</a>
-            <!-- <a href="#" class="nav-links">Contact us</a> -->
-            <a href="./funds.html" class="nav-links" id="raiseFunds-page">Raise Funds</a>
-            <a href="./aboutUs.html" class="nav-links" id="aboutUs-page">About Us</a>
-      </div>
-      <button class="signIn-btn" id="nav-p3">SignIn</button>
-    </nav>
+<?php
+    include 'include/header.php';
+    include 'include/nav.html'; 
+    include 'include/SignIn-Up_Form.php';
+?>
+<style>
+  main {
+      margin: 7rem 13rem 0.5rem 13rem;
+      font-size: 1.2rem;
+  }
+  h1{
+      color: #b30000;
+      text-align: center;
+      margin-bottom: 0.5rem;
+  }
+  h2{
+      color: #b3000093;
+      text-decoration: underline solid #b30000 2px;
+  }
+  p, ul{
+      text-indent: 2rem;
+      line-height: 2rem;
+      margin-bottom: 0.5rem;
+  }
+  li {
+      margin-left: 5rem;
+      text-indent: 0;
+  }
+  /* textarea {
+      width: 80%;
+      height: 15rem;
+      font-size: 1.1rem;
+  } */
+</style>
     <main>
-      <!--SignIn Form-->
-      <section class="signIn_Form_section">
-        <div class="close-btn">&times;</div>
-        <h2>Sign In</h2>
-        <form method="post" action="javascript:void(0)" class="signIn_Form">
-            <!--value of action attribute is remaining-->
-            Email<input type="text" id="email" placeholder="e.g. ravikumar14@gmail.com"><br>
-            Password<input type="password" id="password" placeholder="e.g. raVi99"><br>
-            <button class="signIn-btn" id="signIn_Form_btn">Sign In</button><br>
-            <a href="#">Forgot password</a>
-        </form>
-      </section>
       <h1>Privacy Policy</h1>
 
       <p>
@@ -107,16 +104,14 @@
       <p>
         We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.
       </p><br>
-
+<!-- 
       <h2>Contact Us</h2>
 
       <p>
         If you have any questions or suggestions about our Privacy Policy:<br>
-        <textarea name="feedback" id="feedback"></textarea>
-      </p>
+        <textarea name="feedback" id="feedback" placeholder=""></textarea>
+      </p> -->
     </main>
-    <footer>&copy; Copyright 2023 by BloodLink</footer>
-    <script src="./SignIn-Up_Form.js"></script>
-    <script src="./nav-links.js"></script>
-  </body>
-</html>
+<?php
+  include 'include/footer.html';
+?>
