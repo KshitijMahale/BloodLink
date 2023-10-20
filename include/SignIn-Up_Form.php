@@ -2,7 +2,7 @@
 <section class="signIn_Form_section">
     <div class="close-btn">&times;</div>
     <h2>Sign In</h2>
-    <form method="post" action="javascript:void(0)" class="signIn_Form"> <!--action="javascript:void(0)"-->
+    <form method="post" action="db/afterSignIn.php" class="signIn_Form"> <!--action="javascript:void(0)"-->
         <!--value of action attribute is remaining-->
         Email<input type="email" id="email" name="email" placeholder="e.g. ravikumar14@gmail.com"><br>
         Password<input type="password" id="password" name="password" placeholder="e.g. raVi99"><br>

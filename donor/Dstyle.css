@@ -1,0 +1,34 @@
+main{
+    min-height: 90.5vh;
+}
+
+.sidebar_menu {
+    position: fixed;
+    height: 90.5vh;
+    width: 10rem;
+    background-color: #b30000;
+}
+.sidebar_menu .menu {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+.sidebar_menu .menu li {
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+.sidebar_menu .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.sidebar_menu .menu li:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 1px 1px 5px #000;
+}
+
+#profile { 
+    /* sidebar_menu is also affecting by this  ----FIX THIS------*/
+    margin: 6rem 0 0 10rem;
+}

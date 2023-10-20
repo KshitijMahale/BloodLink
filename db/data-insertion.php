@@ -22,7 +22,8 @@
         $sql = "INSERT INTO donor (`name`,`age`,`gender`,`bloodGrp`,`city`,`phoneNumber`,`email`,`password`) VALUES ('$name','$age','$gender','$bloodGrp','$city','$phoneNumber','$email','$password')";
 
         if(mysqli_query($conn, $sql)){
-            echo '<script>alert("Account created successfully. Now you can Sign In using your email and password.")</script>';
+            header("Location: ../donor/donor.php");
+            exit;
         }
         else {
             echo '<script>alert("Oops! Something went wrong. Please try again.")</script>';
