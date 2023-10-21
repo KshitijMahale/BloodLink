@@ -5,7 +5,7 @@
 ?>
 <style>
     main {
-        margin: 6rem 15rem 0 15rem;
+        margin: 7rem 15rem 0 15rem;
         font-size: 1.3rem;
         line-height: 2.4rem;
         /* min-height: 75vh; */
