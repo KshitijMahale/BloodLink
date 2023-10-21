@@ -14,7 +14,7 @@
         session_start();
         $_SESSION['id'] = $id;
         
-        header("Location: ../donor/donor.php"); // Redirect to the index.php page
+        header("Location: ../donor/Dprofile.php"); // Redirect to the index.php page
         exit;
     } else {
         // Sign-in failed

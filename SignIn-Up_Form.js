@@ -25,10 +25,10 @@ document.querySelector(".signUp_Form_section .close-btn").addEventListener("clic
 
 // for info cards 1&3
 document.querySelector("#info-card-1").addEventListener("click", function(){
-    window.location.href='./findDonor.html';
+    window.location.href='findDonor.php';
 })
 document.querySelector("#info-card-3").addEventListener("click", function(){
-    window.location.href='./findDonor.html';
+    window.location.href='findDonor.php';
 })
 // for info cards 2
 document.querySelector("#info-card-2").addEventListener("click",function(){

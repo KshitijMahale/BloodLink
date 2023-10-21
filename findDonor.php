@@ -38,16 +38,15 @@
         color: #fff;
     }
 
-
     #donors-List {
         background-color: aquamarine;
-        min-height: 30rem;
-        margin: 0 8rem 2rem 8rem;
+        min-height: 23rem;
+        margin: 0 8rem 1.5rem 8rem;
         border-bottom: 2px solid rgba(128, 128, 128, 0.454);
     }
 </style>
-    <!--7 Sept-->
-    <form method="post" id="findDonor">
+    <!-- 7 Sept -->
+    <form method="post" action="findDonor.php" id="findDonor">
         <section id="search">
             <p id="select-city">Select the City: </p>
             <select name="city" id="fd_city">
@@ -69,13 +68,53 @@
             </select><br>
         </section>
         <section id="btns">
-            <button type="submit" id="submit-btn" disabled>Search</button>
+            <button type="submit" id="submit-btn" name="search">Search</button>
             <button type="reset" id="reset-btn">Reset</button>
         </section>
     </form>
-    <section id="donors-List">
-        <!--display the donors with same city and bloodGroup in this section-->
-        <h1>List of donors</h1>
+    <section id="donors-List" style="visibility: <?php echo $donorsListVisibility; ?>;">
+        <?php
+        include 'include/config.php';
+        
+        $donorsListVisibility = 'hidden';
+
+        if (isset($_POST['search'])) {
+            if ($_POST['city'] == "Select") {
+                // echo "<script>alert('Please select a city.');</script>";
+                echo "<h2>Please select a city.</h2>";
+            }
+            elseif (isset($_POST['b_Grp']) && isset($_POST['city'])) {
+                    
+                $bloodGrp = $_POST['b_Grp'];
+                $city = $_POST['city'];
+
+                $sql = "SELECT * FROM donor WHERE bloodGrp = '$bloodGrp' AND city = '$city'";
+                $result = $conn->query($sql);
+                
+                if ($result->num_rows > 0) {
+                    $donorsListVisibility = 'visible';
+                    echo "<h1>Donors found with the specified criteria: </h1>";
+                    echo "<table border='1'>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                            </tr>";
+                    while ($row = $result->fetch_assoc()) {
+                        echo "<tr>
+                                <td>" . $row["name"] . "</td>
+                                <td>" . $row["email"] . "</td>
+                            </tr>";
+                    }
+                    echo "</table>";
+                } else {
+                    $donorsListVisibility = 'hidden';
+                    echo "<h2>Sorry! No donors found with the specified criteria.</h2>";
+                }
+
+                $conn->close();
+            }
+            }
+        ?>
     </section>
 <?php
     include 'include/footer.html';
