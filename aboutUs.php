@@ -14,6 +14,7 @@
       top: 6%;
       width: 100%;
       z-index: -1;
+      opacity: 0.8;
   }
   main {
       margin: 21rem 13rem 0.5rem 13rem;

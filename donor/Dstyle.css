@@ -1,13 +1,8 @@
-main{
-    /* min-height: 90.5vh; */
-    /* margin-top: 6rem; */
-}
-
 .sidebar_menu {
     position: fixed;
     top: 1rem;
-    height: 95vh;
-    width: 10rem;
+    height: 90.7vh;
+    width: 13rem;
     background-color: #b30000;
 }
 .sidebar_menu .menu {
@@ -16,10 +11,12 @@ main{
     top: 5rem;
 }
 .sidebar_menu .menu li {
+    font-size: 1.2rem;
     margin-top: 1rem;
     padding: 1rem 1.5rem;
 }
 .sidebar_menu .menu a {
+    display: block;
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
@@ -34,3 +31,10 @@ main{
     color: #000;
     box-shadow: 1px 1px 5px #000;
 }
+
+/* Add this to your CSS */
+/* .selected-link {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 1px 1px 5px #000;
+} */
