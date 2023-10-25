@@ -69,7 +69,7 @@
           <label class="align-inputBox">Email <input type="email" id="email" name="email"><br></label>
           <label class="align-inputBox">Password <input type="password" id="password" name="password" autocomplete="current-password"><br></label>
           <button type="submit" class="update-btn">Update</button>
-          <button type="reset" class="reset-btn">Reset</button>
+          <!-- <button type="reset" class="reset-btn">Reset</button> -->
       </form>
     </div>
 

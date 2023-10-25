@@ -1,0 +1,39 @@
+#editForm {
+    margin: 4rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
+    grid-template-rows: repeat(5, 1fr);
+    font-size: 1.2rem;
+}
+
+#editForm input,
+#editForm select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#editForm option {
+    font-size: 1rem;
+}
+
+#editForm button {
+    grid-column: 1;
+    grid-row: 5;
+    width: 8rem;
+    height: 2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#editForm label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 5rem;
+}
