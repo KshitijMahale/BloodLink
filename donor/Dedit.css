@@ -16,9 +16,14 @@
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
-#updateMessage {
+.success-message {
     font-size: 1.5rem;
     background-color: #57d76392;
+    margin-left: 1rem;
+}
+.error-message {
+    font-size: 1.5rem;
+    background-color: #c9232392;
     margin-left: 1rem;
 }
 

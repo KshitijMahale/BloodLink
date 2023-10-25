@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="Asidebar.css">
     <link rel="stylesheet" href="admin.css">
     <link rel="stylesheet" href="edit.css">
+    <link rel="stylesheet" href="Addfunds.css">
 
 </head>
 <style>
