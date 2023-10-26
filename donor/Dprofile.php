@@ -43,6 +43,3 @@
       </div>
     </section>
 </main>
-<?php
-  include 'Dfooter.html';
-?>

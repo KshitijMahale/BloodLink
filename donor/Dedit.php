@@ -75,6 +75,3 @@
 
   </section>
 </main>
-<?php
-  include 'Dfooter.html';
-?>

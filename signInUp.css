@@ -1,4 +1,7 @@
 /* Sign In Form */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
 .signIn_Form_section {
     position: fixed;
     top: 50%;

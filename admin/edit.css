@@ -24,14 +24,16 @@
     grid-row: 5;
     width: 8rem;
     height: 2rem;
-    background-color: #007bff;
+    background-color: #b30000;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 1rem;
 }
-
+#editForm button:hover {
+    background-color: #700000;
+}
 #editForm label {
     font-weight: bold;
     font-size: 1.2rem;

@@ -84,3 +84,12 @@ nav a {
 .nav-links.active-nav-links {
     text-decoration: underline solid #000 2px;
 }
+
+
+/* -----------------footer---------------- */
+footer {
+    background-color: #06070A;
+    color: #ffffffce;
+    padding: 1rem;
+    text-align: center;
+}
