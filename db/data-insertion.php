@@ -22,7 +22,7 @@
         $sql = "INSERT INTO donor (`name`,`age`,`gender`,`bloodGrp`,`city`,`phoneNumber`,`email`,`password`) VALUES ('$name','$age','$gender','$bloodGrp','$city','$phoneNumber','$email','$password')";
 
         if(mysqli_query($conn, $sql)){
-            header("Location: ../donor/donor.php");
+            header("Location: ../donor/Dprofile.php");
             exit;
         }
         else {

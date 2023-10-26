@@ -33,49 +33,55 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <style>
     #contactusForm {
-            text-align: center;
-            max-width: 400px;
-            margin: 10rem auto;
-            margin-bottom: 3.5rem;
-            padding: 20px;
-            border: 1px solid #ccc;
-            background-color: #f7f7f7;
-        }
+        max-width: 25rem;
+        margin: 10rem auto;
+        margin-bottom: 3.5rem;
+        padding: 1.5rem;
+        border: 1px solid #ccc;
+        background-color: #f7f7f7;
+    }
 
-        #contactusForm h1 {
-            margin: 0;
-        }
+    #contactusForm h1 {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 2.2rem;
+        text-decoration: underline solid #b30000 2px;
+    }
 
-        label, input, textarea {
-            display: block;
-            margin-bottom: 10px;
-            width: 100%;
-        }
-        textarea {
-            height: 5rem;
-        }
+    label, input, textarea {
+        display: block;
+        margin-bottom: 0.8rem;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    label {
+        font-size: 1.5rem;
+    }
+    textarea {
+        height: 5rem;
+    }
 
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 0.4rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+    }
 
-        input[type="submit"] {
-            background-color: #b30000;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #700000;
-        }
+    input[type="submit"] {
+        background-color: #b30000;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #700000;
+    }
 
-    </style>
 </style>
 
 <form method="POST" action="" id="contactusForm">

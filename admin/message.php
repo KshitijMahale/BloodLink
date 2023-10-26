@@ -9,11 +9,16 @@ include 'Asidebar.html';
         flex-wrap: wrap;
     }
     #message-details {
+        width: 18.1rem;
         border-right: 2px solid #000;
         padding: 1rem 2rem;
         border-bottom: 2px solid #000;
         font-size: 1.2rem;
         line-height: 2rem;
+    }
+    .box {
+        margin: 10rem 2rem 2rem 15.5rem;
+        width: 80%;
     }
 </style>
 <section id="main">
