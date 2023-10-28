@@ -92,9 +92,17 @@
             <p id="select-city">Select the City: </p>
             <select name="city" id="fd_city">
                 <option value="Select">Select</option>
+                <option value="Agra">Agra</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Mumbai">Mumbai</option>
                 <option value="Nashik">Nashik</option>
                 <option value="Pune">Pune</option>
-                <option value="Mumbai">Mumbai</option>
             </select>
             <p id="select-b_Grp">Select Blood group: </p>
             <select name="b_Grp" id="fd_bGrp">
