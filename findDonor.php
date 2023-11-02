@@ -45,37 +45,38 @@
     #donors-List {
         min-height: 20.5rem;
         margin: 0 8rem 1.5rem 8rem;
-        /* border-bottom: 2px solid rgba(128, 128, 128, 0.454); */
     }
 
     /* For list of donors */
     table {
         border-collapse: collapse;
-        border: 2px solid #000;
+        border: none;
         width: 70%;
         margin: 0 auto;
+        box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.2);
     }
     caption {
         font-size: 1.8rem;
         font-weight: bold;
-        color: #fff;
-        background-color: #b30000;
+        color: #000;
         padding: 0.2rem;
-        border-radius: 1rem 1rem 0 0;
-        border: 2px solid #000;
+        border: none;
+        text-decoration: underline solid #b30000 2px;
     }
     th, td {
-        border: 0.1px solid #000;
-        padding: 0.8rem;
-        text-align: center;
-        border-bottom: 2px solid #000;
+        padding: 0.5rem 0.8rem;
+        text-align: left;
+        border: none;
     }
     th {
-        background-color: darkgrey;
+        text-align: center;
+        background-color: #b30000;
         font-size: 1.5rem;
-        color: #000;
+        color: #fff;
+        border: none;
     }
     td {
+        padding-left: 1.5rem;
         font-size: 1.3rem;
     }
     tr:nth-child(even) {
@@ -83,6 +84,12 @@
     }
     tr:nth-child(odd) {
         background-color: #ffffff;
+    }
+    tr:nth-child(even):hover {
+        background-color: rgba(179, 0, 0, 0.1);
+    }
+    tr:nth-child(odd):hover {
+        background-color: rgba(179, 0, 0, 0.1);
     }
     
 </style>
@@ -130,7 +137,6 @@
 
         if (isset($_POST['search'])) {
             if ($_POST['city'] == "Select") {
-                // echo "<script>alert('Please select a city.');</script>";
                 echo "<h2>Please select a city.</h2>";
             }
             elseif (isset($_POST['b_Grp']) && isset($_POST['city'])) {
@@ -144,7 +150,6 @@
                 if ($result->num_rows > 0) {
                     $donorsListVisibility = 'visible';
                     $num = 1;
-                    // echo "<h1>Donors found with the specified criteria: </h1>";
                     echo "<table border='1' class='table'>
                             <caption>Donors</caption>
                             <tr>

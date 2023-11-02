@@ -26,7 +26,6 @@
       margin-bottom: 4rem;
       text-align: center;
       font-size: 2.5rem;
-      /* text-decoration: underline solid #fff 2px; */
   }
   h3 {
       margin: 1.5rem 0 0.2rem 0;

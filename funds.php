@@ -21,7 +21,6 @@
         margin: 7rem 15rem 0 15rem;
         font-size: 1.3rem;
         line-height: 2.4rem;
-        /* min-height: 75vh; */
     }
 
     h1 {
@@ -98,17 +97,13 @@
                         while ($row = $donorsResult->fetch_assoc()) {
                             $donorName = $row['fundDonor'];
                             $donationAmount = number_format($row['donation_amount'], 2);
-                            // $donationDate = $row['donation_date'];
                             echo "<li>{$donorName}: &#8377; {$donationAmount}</li>";
-    
-                            // echo "<li>{$donorName}: &#8377; {$donationAmount} (Donation Date: {$donationDate})</li>";
                         }
                     }
                     ?>
                 </ul>
             </div>
         </div>
-
     </main>
 <?php
     include 'include/footer.html';

@@ -26,11 +26,6 @@
       margin-left: 5rem;
       text-indent: 0;
   }
-  /* textarea {
-      width: 80%;
-      height: 15rem;
-      font-size: 1.1rem;
-  } */
 </style>
     <main>
       <h1>Privacy Policy</h1>
@@ -104,13 +99,6 @@
       <p>
         We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.
       </p><br>
-<!-- 
-      <h2>Contact Us</h2>
-
-      <p>
-        If you have any questions or suggestions about our Privacy Policy:<br>
-        <textarea name="feedback" id="feedback" placeholder=""></textarea>
-      </p> -->
     </main>
 <?php
   include 'include/footer.html';

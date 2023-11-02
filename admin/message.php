@@ -1,56 +1,94 @@
 <?php
-include '../include/config.php';
-include 'Anav.php';
-include 'Asidebar.html';
+    include '../include/config.php';
+    include 'Anav.php';
+    include 'Asidebar.html';
 ?>
 <style>
-    .message-container {
-        display: flex;
-        flex-wrap: wrap;
+    body {
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        font-size: 2rem;
     }
+
+    .message-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+        gap: 1.2rem;
+        margin: 1.2rem;
+    }
+
     #message-details {
-        width: 18.1rem;
-        border-right: 2px solid #000;
-        padding: 1rem 2rem;
-        border-bottom: 2px solid #000;
+        width: 18rem;
+        border: 0.1rem solid #fff;
+        padding: 1.2rem;
+        padding-top: 0.2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.15);
         font-size: 1.2rem;
         line-height: 2rem;
     }
+    #message-details:hover {
+        width: 18rem;
+        box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+        font-size: 1.3rem;
+    }
+    #message-details img {
+        display: inline;
+        height: 1rem;
+        position: relative;
+        left: 17.5rem;
+        cursor: pointer;
+    }
+    #message-details img:hover {
+        height: 1.15rem;
+    }
+
     .box {
-        margin: 10rem 2rem 2rem 15.5rem;
+        margin: 8rem 2rem 2rem 14.5rem;
         width: 80%;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+    }
+
+    #box-heading {
+        font-size: 2rem;
+        color: #000;
+        padding-left: 2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .Donor-detail-headings {
+        color: #b30000;
+        display: inline;
+        font-size: 1.2rem;
+        font-weight: bold;
     }
 </style>
 <section id="main">
     <div class="box">
         <h1 id='box-heading'>Messages</h1>
-
         <div class="message-container">
-
         <?php
-        $conn = mysqli_connect("localhost", "root", "", "contactus");
-
-        if(!$conn){
-            die("Database not connected due to ". mysqli_connect_error());
-        }
-
-        // Fetch and display donor messages
-        $sql = "SELECT * FROM messages";
-        $result = $conn->query($sql);
-        if ($result->num_rows > 0) {
-            while ($row = $result->fetch_assoc()) {
-                echo "<div id='message-details'>";
-                echo "Name: " . $row['name'] . "<br>";
-                echo "Email: " . $row['email'] . "<br>";
-                echo "Message: " . $row['message'] . "<br>";
-                echo "Created At: " . $row['created_at'] . "<br>";
-                echo "</div>";
+            include 'config_message.php';
+            // Fetch and display donor messages
+            $sql = "SELECT * FROM messages";
+            $result = $c->query($sql);
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo "<div id='message-details'>";
+                    echo "<a href='delete-message.php?id=" . $row["id"] . "'><img src='../imgs/trash-solid.svg' id='close-btn'></a><br>";
+                    echo "<p class='Donor-detail-headings'>Name: </p>" . $row['name'] . "<br>";
+                    echo "<p class='Donor-detail-headings'>Email: </p>" . $row['email'] . "<br>";
+                    echo "<p class='Donor-detail-headings'>Message: </p>" . $row['message'] . "<br>";
+                    echo "<p class='Donor-detail-headings'>Received on: </p>" . $row['created_at'] . "<br>";
+                    echo "</div>";
+                }
+            } else {
+                echo "No messages found.";
             }
-        } else {
-            echo "No messages found.";
-        }
-
-        $conn->close();
+            $c->close();
         ?>
         </div>
     </div>

@@ -9,12 +9,10 @@
     <link rel="icon" href="../imgs/logo-img.png" />
     <title>BloodLink</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="../nav-footer.css"> -->
     <link rel="stylesheet" href="Asidebar.css">
     <link rel="stylesheet" href="admin.css">
     <link rel="stylesheet" href="edit.css">
     <link rel="stylesheet" href="Addfunds.css">
-
 </head>
 <style>
 * {
@@ -60,9 +58,6 @@ nav {
 }
 
 #nav-p2 {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     margin-right: 29rem;
     font-size: 2rem;
 }

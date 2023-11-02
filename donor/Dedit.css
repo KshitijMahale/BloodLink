@@ -10,6 +10,7 @@
 }
 
 #edit-heading {
+    font-size: 1.8rem;
     padding: 0.5rem;
     background-color: #f2f2f2;
     border-bottom: 2px solid #5050507c;
@@ -19,7 +20,7 @@
 .success-message {
     font-size: 1.5rem;
     background-color: #57d76392;
-    margin-left: 1rem;
+    padding: 0.5rem 4rem;
 }
 .error-message {
     font-size: 1.5rem;
@@ -55,10 +56,8 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: 1rem;
+    font-size: 1.1rem;
 }
-/* .reset-btn {
-    margin-left: 10rem;
-} */
 
 .Update_Form label {
     font-weight: bold;

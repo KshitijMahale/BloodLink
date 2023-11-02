@@ -27,7 +27,7 @@
 
         ?>
             <form method="post" action="" id="deleteAcc_Form">
-                <p>Are you sure you want to delete your account?</p>
+                <p>Do you want to delete your account?</p>
                 <button type="submit"name="delete" value="Delete My Account">Yes, Delete my account.</button>
             </form>
       </div>

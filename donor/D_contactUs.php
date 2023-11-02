@@ -2,12 +2,10 @@
     include 'Dnav.php'; 
     include 'check.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Handle form submission
     $name = $_POST["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
 
-    // Save the message to the database (assuming you have a database connection)
     $hostname = "localhost";
     $username = "root";
     $password = "";

@@ -32,7 +32,7 @@
             } elseif ($emailResult->num_rows > 0) {
               echo "<p id='updateMessage' class='error-message'>Email already exists in the database.</p>";
             } else {
-              // Build the SQL query for updating non-empty fields
+              // updating non-empty fields
               $updateQuery = "UPDATE donor SET ";
               if (!empty($age)) $updateQuery .= "age='$age', ";
               if ($city !== 'Select') $updateQuery .= "city='$city', ";
@@ -40,7 +40,7 @@
               if (!empty($email)) $updateQuery .= "email='$email', ";
               if (!empty($password)) $updateQuery .= "password='$password', ";
 
-              // Remove the trailing comma and space from the query
+              // Remove comma and space from the query
               $updateQuery = rtrim($updateQuery, ', ');
 
               $updateQuery .= " WHERE id='$id'";

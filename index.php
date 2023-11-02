@@ -44,7 +44,6 @@
         cursor: pointer;
     }
     .heading-text button:hover {
-        color: #000;
         border: 03px solid #fff;
         background-color: transparent;
     }
@@ -168,29 +167,6 @@
         opacity: 0.7;
     }
 
-    /* 4 Sept */
-    /* #Donation-types {
-        margin: 6rem 8rem 0 8rem;
-    }
-    #DT-heading {
-        text-align: center;
-        font-size: 3rem;
-        margin-bottom: 3rem;
-    }
-    .donation-cards {
-        width: 100%;
-        display: inline-flex;
-        justify-content: space-between;
-    }
-
-    .donation-card {
-        border: 2px solid rgba(0, 0, 0, 0.1);
-        width: 23.1rem;
-        height: 30rem;
-        border-radius: 30px;
-
-    } */
-
     #signUp-card {
         margin: 5rem  0 0 20rem;
         background-color: #ae0e28;
@@ -235,28 +211,22 @@
             <div class="heading-text">
                 <p>Register yourself</p>
                 We can make a difference<br>
-                <!-- You Can Help us to Save Someone's Live Through Blood Donation<br> -->
-                <!-- <p>Give Blood get Blessings</p> -->
                 <button class="signUp-btn">Join as Donor</button>
             </div>
             <section id="info-card">
                 <div class="info-cards" id="info-card-1">
-                    <!-- link this part to the donor finding form -->
                     <img src="./imgs/icon_box_bg-1.png" class="icon_box_bg">
                     <img src="./imgs/search.png" class="icons" id="icon1">
                     <p class="info-cards-heading">Find<br>Donor</p>
-                    <p class="info-cards-text">Search OnlineBlood database with city and blood group. Get donor nearby.</p>
+                    <p class="info-cards-text">Search BloodLink database with city and blood group. Get donor nearby.</p>
                 </div>
                 <div class="info-cards" id="info-card-2">
-                    <!-- link this part to the SignUp form -->
                     <img src="./imgs/icon_box_bg-3.png" class="icon_box_bg">
                     <img src="./imgs/volunteer-img.png" class="icons" id="icon2">
                     <p class="info-cards-heading">Become<br>Volunteer</p>
                     <p class="info-cards-text">Very Simple. It takes just 2 minutes to join, please do it now and be a Hero.</p>
                 </div>
                 <div class="info-cards" id="info-card-3">
-                    <!-- link this part to the donor finding form 
-                    Same as Find Donor section -->
                     <img src="./imgs/icon_box_bg-2.png" class="icon_box_bg">
                     <img src="./imgs/img3.png" class="icons" id="icon3">
                     <p class="info-cards-heading">Need<br>Blood ?</p>
@@ -301,26 +271,6 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="Donation-types">
-            <p id="DT-heading">Donation Available</p>
-            <div class="donation-cards">
-                <div class="donation-card">
-                    <img src="./imgs/blood.jpg" alt="blood">
-                    <p class="donation-card-heading">Blood</p>
-                    <p class="donation-card-text">Takes only 10-15 minutes and can be given again after 56 Days.</p>
-                </div>
-                <div class="donation-card">
-                    <img src="./imgs/plasma.jpg" alt="plasma">
-                    <p class="donation-card-heading">Plasma</p>
-                    <p class="donation-card-text">Takes only 45 minutes and can be given again after 7 Days.</p>
-                </div>
-                <div class="donation-card">
-                    <img src="./imgs/platelets.jpg" alt="platelets">
-                    <p class="donation-card-heading">Platelets</p>
-                    <p class="donation-card-text">Takes only 45 minutes and can be given again after 7 Days.</p>
-                </div>
-            </div>
-        </section> -->
         <section id="signUp-card">
             <div id="signUp-card-text">
                 <p>Help People in need</p>

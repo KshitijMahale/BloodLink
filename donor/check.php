@@ -3,7 +3,6 @@
 
     session_start();
     $id = $_SESSION['id'];
-    // session_destroy();
 
     $sql = "SELECT * FROM donor WHERE id='$id'";
     $result = $conn->query($sql);
@@ -23,7 +22,6 @@
         }
     } else {
         // Sign-in failed
-        // add something more in this----------------
         echo "Invalid credentials. Please try again.";
     }
 
@@ -38,5 +36,4 @@
             exit();
         }
     }
-    // $conn->close();
 ?>
