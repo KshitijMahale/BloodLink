@@ -31,7 +31,6 @@
     #message-details:hover {
         width: 18rem;
         box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
-        font-size: 1.3rem;
     }
     #message-details img {
         display: inline;
@@ -39,9 +38,10 @@
         position: relative;
         left: 17.5rem;
         cursor: pointer;
+        opacity: 0.3;
     }
     #message-details img:hover {
-        height: 1.15rem;
+        opacity: 1;
     }
 
     .box {

@@ -6,7 +6,6 @@
         Email<input type="email" id="email" name="email" placeholder="e.g. ravikumar14@gmail.com"><br>
         Password<input type="password" id="password" name="password" placeholder="e.g. raVi99"><br>
         <button class="signIn-btn" id="signIn_Form_btn">Sign In</button><br>
-        <a href="#">Forgot password</a>
     </form>
 </section>
 

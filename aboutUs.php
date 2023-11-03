@@ -102,6 +102,7 @@
             padding: 1.5rem;
             border: 1px solid #ccc;
             background-color: #f7f7f7;
+            box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
         }
         
         #contactusForm h1 {

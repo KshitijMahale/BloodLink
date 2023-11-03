@@ -13,7 +13,7 @@
         $totalFunds = $totalFundsResult->fetch_assoc()["total_funds"];
     }
 
-    $donorsQuery = "SELECT fundDonor, donation_amount FROM donation_records";
+    $donorsQuery = "SELECT fundDonor, donation_amount, donation_date FROM donation_records";
     $donorsResult = $con->query($donorsQuery);
 ?>
 <style>
@@ -32,7 +32,6 @@
     #scan-text {
         margin-top: 1rem;
         background-color: #b3000067;
-        border-radius: 0.5rem;
         text-align: center;
         border-radius: 0.1rem 30rem;
     }
@@ -42,25 +41,45 @@
         margin: 1rem 0 0 17rem;
     }
 
-    .donation {
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+    tr {
+        width: 100%;
+    }
+
+    th, td {
+        border: none;
+        padding: 0.5rem 0.8rem;
+        text-align: left;
+    }
+
+    th {
         background-color: #b30000;
-        border-radius: 0.6rem;
-        margin: 1rem 0;
-        border: 2px solid #000;
+        font-size: 1.4rem;
         color: #fff;
+        border: none;
     }
-    .donation p {
+
+    td {
+        font-size: 1.2rem;
+        padding-left: 1rem;
+    }
+
+    tr:nth-child(even) {
+        background-color: rgba(179, 0, 0, 0.1);
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ffffff;
+    }
+    #totFunds, #amt {
+        background-color: #fff;
+        border-top: 2px solid #000;
         font-weight: bold;
-        font-size: 1.5rem;
-    }
-    #totFunds {
-        background-color: #000;
-        color: #fff;
-        font-size: 1.8rem;
-        text-align: center;
-        border-bottom: 2px solid #fff;
-        border-radius: 0.5rem 0.5rem 0 0;
-        padding: 0.5rem;
     }
     .donationDetails {
         padding: 1rem;
@@ -88,18 +107,33 @@
         <img src="./imgs/QR.jpg">
 
         <div class="donation">
-            <p id="totFunds">Total Funds Raised: &#8377; <?php echo number_format($totalFunds, 2); ?></p>
             <div class="donationDetails">
-                <p>Donors and Contributions:</p>
                 <ul>
                     <?php
-                    if ($donorsResult->num_rows > 0) {
-                        while ($row = $donorsResult->fetch_assoc()) {
-                            $donorName = $row['fundDonor'];
-                            $donationAmount = number_format($row['donation_amount'], 2);
-                            echo "<li>{$donorName}: &#8377; {$donationAmount}</li>";
+                        if ($donorsResult->num_rows > 0) {
+                            echo "<table border='1'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Amount (&#8377)</th>
+                                    <th>Date</th>
+                                </tr>";
+                            while ($row = $donorsResult->fetch_assoc()) {
+                                $donorName = $row['fundDonor'];
+                                $donationAmount = number_format($row['donation_amount'], 2);
+                                $date = $row["donation_date"];
+                                $formattedDate = date('d-m-Y', strtotime($date));
+                                echo "<tr>
+                                    <td>$donorName</td>
+                                    <td class='amount'>$donationAmount</td>
+                                    <td>$formattedDate</td>
+                                </tr>";
+                            }
+                            echo "<tr id='totFunds'>
+                                <td>Total funds Raised:</td>
+                                <td id='amt'>" . number_format($totalFunds, 2) . "</td>
+                                </tr>";
+                            echo "</table>";
                         }
-                    }
                     ?>
                 </ul>
             </div>
