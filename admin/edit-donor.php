@@ -75,6 +75,14 @@
                             <label for='city'>City:
                             <select name='city' id='city' value='$city'>
                                 <option value='Select'>Select</option>
+                                <option value='Agra'" . ($city == 'Agra' ? ' selected' : '') . ">Agra</option>
+                                <option value='Ahemdabad'" . ($city == 'Ahemdabad' ? ' selected' : '') . ">Ahemdabad</option>
+                                <option value='Bangalore'" . ($city == 'Bangalore' ? ' selected' : '') . ">Bangalore</option>
+                                <option value='Chennai'" . ($city == 'Chennai' ? ' selected' : '') . ">Chennai</option>
+                                <option value='Delhi'" . ($city == 'Delhi' ? ' selected' : '') . ">Delhi</option>
+                                <option value='Hyderabad'" . ($city == 'Hyderabad' ? ' selected' : '') . ">Hyderabad</option>
+                                <option value='Jaipur'" . ($city == 'Jaipur' ? ' selected' : '') . ">Jaipur</option>
+                                <option value='Kolkata'" . ($city == 'Kolkata' ? ' selected' : '') . ">Kolkata</option>
                                 <option value='Nashik'" . ($city == 'Nashik' ? ' selected' : '') . ">Nashik</option>
                                 <option value='Pune'" . ($city == 'Pune' ? ' selected' : '') . ">Pune</option>
                                 <option value='Mumbai'" . ($city == 'Mumbai' ? ' selected' : '') . ">Mumbai</option>

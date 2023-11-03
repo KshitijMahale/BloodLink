@@ -59,12 +59,20 @@
 
       <form method="post" action="" class="Update_Form">
           <label class="align-inputBox">Age <input type="number" id="age" name="age"></label>
-          <label class="align-inputBox">City <select name="city" id="city">
-              <option value="Select">Select</option>
-              <option value="Nashik">Nashik</option>
-              <option value="Pune">Pune</option>
-              <option value="Mumbai">Mumbai</option>
-          </select><br></label>
+          <label class="align-inputBox">City <select name="city" id="city" required>
+            <option value="Select">Select</option>
+            <option value="Agra">Agra</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Nashik">Nashik</option>
+            <option value="Pune">Pune</option>
+        </select><br></label>
           <label class="align-inputBox">Mobile No. <input type="number" id="mobileNo" name="phoneNumber"></label>
           <label class="align-inputBox">Email <input type="email" id="email" name="email"><br></label>
           <label class="align-inputBox">Password <input type="password" id="password" name="password" autocomplete="current-password"><br></label>
